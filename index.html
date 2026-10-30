@@ -407,6 +407,26 @@
 
       <div class="proj-card">
         <div class="proj-head">
+          <span class="method-badge get">GET</span>
+          <span class="proj-route">/projects/delhi-ncr-metro-guide</span>
+          <span class="status-badge">200 OK</span>
+        </div>
+        <div class="proj-body">
+          <p>Metro journey planner for Delhi NCR: pick a source and destination and get the route with line colors and interchanges, boarding direction, estimated travel time, next 3 trains, a fare estimate, and an interactive map with the route highlighted.</p>
+          <ul>
+            <li>Wrote a Python converter that turns DMRC GTFS data (262 stations) into compact JSON files; no backend or frameworks, just HTML, CSS and vanilla JavaScript.</li>
+            <li>Route finding runs BFS over a station graph (fewest stops), with interchanges detected from line-color changes; fares use haversine distances mapped to the Aug 2025 slabs.</li>
+            <li>Responsive layout with a light/dark toggle, Leaflet + OpenStreetMap map, and data limits (Aug 2023 schedule, approximate times and fares) stated openly in the app.</li>
+            <li>Built in stages with an AI coding agent in VS Code, reviewing the data at each step (station counts, interchange checks, spot-tests against known routes).</li>
+          </ul>
+          <div class="tech-row">
+            <span class="tech-pill">JavaScript</span><span class="tech-pill">HTML/CSS</span><span class="tech-pill">Leaflet</span><span class="tech-pill">OpenStreetMap</span><span class="tech-pill">Python</span><span class="tech-pill">GTFS</span><span class="tech-pill">Netlify</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-head">
           <span class="method-badge post">POST</span>
           <span class="proj-route">/projects/vehicle-maintenance-system</span>
           <span class="status-badge">200 OK</span>
